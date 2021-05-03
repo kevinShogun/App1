@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.View.ConvertirGrados">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#333333">
+            
+            <Label Text="Convertir Grados"
+                TextColor="#fafafa"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                FontSize="20"
+               FontAttributes="Bold"
+               Margin="0,50,0,30"
+               />
+            <Image Source="caliente.png" 
+               HorizontalOptions="Center"
+               WidthRequest="100"/>
+
+            <Entry Placeholder="Digite la cantidad de Grados Fahrenhiet"
+               x:Name="txtGrados"
+               PlaceholderColor="#cccccc"
+                TextColor="#fafafa"
+               VerticalOptions="Center"
+               Keyboard="Numeric"
+               Margin="25,35,25,25"
+               />
+
+            <Button 
+                x:Name="btnGrados"
+                Clicked="btnGrados_Clicked"
+                Text="Calcular"
+                VerticalOptions="Center"
+                BackgroundColor="#dddddd"
+                FontSize="15"
+                FontAttributes="Bold"
+                Margin="10,30,10,10"
+                CornerRadius="25"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

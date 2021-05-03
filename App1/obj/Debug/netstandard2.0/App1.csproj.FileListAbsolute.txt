@@ -12,3 +12,5 @@ D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
 D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.dll
 D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\View\CalcualrHipotenusa.xaml.g.cs
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\View\ConvertirGrados.xaml.g.cs

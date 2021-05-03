@@ -6,13 +6,68 @@
              mc:Ignorable="d"
              x:Class="App1.MainPage">
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-    </Grid>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Order="Primary"
+            
+            IconImageSource="calculator.png"/>
+        
+        <ToolbarItem Text="Tarea N° 1" 
+                     Order="Primary"
+                     Priority="0"/>
+
+        <ToolbarItem Text="Convertidor de Grados" 
+                     Order="Secondary"
+                     x:Name="btnConvertPage"
+                     Clicked="btnConvertPage_Clicked"/>
+        
+        <ToolbarItem Text="Calcular Hipotenusa" 
+                     Order="Secondary"
+                     x:Name="btnCalcularPage"
+                     Clicked="btnCalcularPage_Clicked"/>
+        
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout BackgroundColor="#333333">
+        
+        <Label Text="Calcular el Área de un Triangulo"
+                TextColor="#fafafa"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                FontSize="20"
+               FontAttributes="Bold"
+               Margin="0,50,0,30"
+               />
+        <Image Source="geometry.png" 
+               HorizontalOptions="Center"
+               WidthRequest="100"/>
+        
+        <Entry Placeholder="Digite la Base"
+               x:Name="txtBase"
+               PlaceholderColor="#cccccc"
+                TextColor="#fafafa"
+               VerticalOptions="Center"
+               Keyboard="Numeric"
+               Margin="25,35,25,0"
+               />
+
+        <Entry Placeholder="Digite la altura"
+               x:Name="txtAltura"
+               PlaceholderColor="#cccccc"
+                TextColor="#fafafa"
+               VerticalOptions="Center"
+               Keyboard="Numeric"
+                Margin="25,35,25,0"/>
+
+        <Button x:Name="btnCalcularArea"
+                Clicked="btnCalcularArea_Clicked_1"
+                Text="Calcular"
+                VerticalOptions="Center"
+                BackgroundColor="#dddddd"
+                FontSize="15"
+                FontAttributes="Bold"
+                Margin="25,35,25,25"
+                CornerRadius="25"/>
+    </StackLayout>
 
 </ContentPage>

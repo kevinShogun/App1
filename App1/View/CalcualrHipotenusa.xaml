@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.View.CalcualrHipotenusa">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#333333">
+            <Label Text="Calcular la Hipotenusa"
+                TextColor="#fafafa"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+                FontSize="20"
+               FontAttributes="Bold"
+               Margin="0,50,0,20"
+               />
+            <Image Source="matematicas.png" 
+               HorizontalOptions="Center"
+               WidthRequest="100"/>
+
+            <Entry Placeholder="Digite el lado A del triángulo"
+               x:Name="txtLadoB"
+               PlaceholderColor="#cccccc"
+                TextColor="#fafafa"
+               VerticalOptions="Center"
+               Keyboard="Numeric"
+               Margin="25,35,25,0"
+               />
+
+            <Entry Placeholder="Digite el lado B del triángulo"
+               x:Name="txtLadoC"
+               PlaceholderColor="#cccccc"
+                TextColor="#fafafa"
+               VerticalOptions="Center"
+               Keyboard="Numeric"
+               Margin="25,35,25,0"
+               />
+
+            <Button 
+                x:Name="btnCalcularHip"
+                Clicked="btnCalcularHip_Clicked"
+                Text="Calcular"
+                VerticalOptions="Center"
+                BackgroundColor="#dddddd"
+                FontSize="15"
+                FontAttributes="Bold"
+                Margin="25,35,25,25"
+                CornerRadius="25"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

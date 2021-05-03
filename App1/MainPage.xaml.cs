@@ -17,5 +17,57 @@ namespace App1
         {
             InitializeComponent();
         }
+
+        double base_fig;
+        double altura;
+        double resp;
+        private void BtnCalcularArea_Clicked(object sender, EventArgs e)
+        {
+            calcular();
+        }
+
+        private void btnCalcularArea_Clicked_1(object sender, EventArgs e)
+        {
+            calcular();
+            txtAltura.Text = "";
+            txtBase.Text = "";
+        }
+        private void calcular()
+        {
+            if (!string.IsNullOrEmpty(txtAltura.Text) || !string.IsNullOrEmpty(txtBase.Text))
+            {
+                
+                base_fig = Convert.ToDouble(txtBase.Text);
+                altura = Convert.ToDouble(txtAltura.Text);
+               
+                if(base_fig > 0 && altura > 0)
+                {
+                    resp = (base_fig * altura) / 2;
+                    DisplayAlert("El área equivale a:", resp.ToString(), "Ok");
+                }
+                else
+                {
+                    DisplayAlert("Error", "Los datos Invalidos", "Aceptar");
+                }
+            }
+            else
+            {
+                DisplayAlert("Error", "Campos Vacios", "Aceptar");
+            }
+        }
+
+        private void btnHomePage_Clicked(object sender, EventArgs e)
+        {
+        }
+
+        private void btnCalcularPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.CalcualrHipotenusa());
+        }
+
+        private void btnConvertPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.ConvertirGrados()); 
+        }
     }
 }

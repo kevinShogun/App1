@@ -474,3 +474,10 @@ D:\captura\GitHub\App1\App1.Android\obj\Debug\90\stamp\_ConvertResourcesCases.st
 D:\captura\GitHub\App1\App1.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\captura\GitHub\App1\App1.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\captura\GitHub\App1\App1.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\home.png
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\calculator2.png
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\calculator.png
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\geometry.png
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\calculador.png
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\matematicas.png
+D:\captura\GitHub\App1\App1.Android\obj\Debug\90\res\drawable\caliente.png
