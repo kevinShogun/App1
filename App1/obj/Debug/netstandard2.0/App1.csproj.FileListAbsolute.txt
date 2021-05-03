@@ -1,0 +1,14 @@
+D:\captura\GitHub\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+D:\captura\GitHub\App1\App1\bin\Debug\netstandard2.0\App1.dll
+D:\captura\GitHub\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+D:\captura\GitHub\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.dll
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+D:\captura\GitHub\App1\App1\obj\Debug\netstandard2.0\App1.pdb
