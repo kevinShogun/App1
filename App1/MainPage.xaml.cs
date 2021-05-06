@@ -36,7 +36,17 @@ namespace App1
         {
             if (!string.IsNullOrEmpty(txtAltura.Text) || !string.IsNullOrEmpty(txtBase.Text))
             {
-                
+
+                if (txtBase.Text.Trim() == "." || txtBase.Text.Trim() == "-") {
+                    DisplayAlert("Error", "Por favor colocque Números", "Ok");
+                    txtBase.Text = "";
+                }
+
+                if (txtAltura.Text.Trim() == "-" || txtAltura.Text.Trim() == ".") {
+                    DisplayAlert("Error", "Por favor colocque Números", "Ok");
+                    txtAltura.Text = "";
+                }
+
                 base_fig = Convert.ToDouble(txtBase.Text);
                 altura = Convert.ToDouble(txtAltura.Text);
                

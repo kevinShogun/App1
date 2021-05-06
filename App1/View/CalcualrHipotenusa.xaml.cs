@@ -7,34 +7,38 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App1.View
-{
+namespace App1.View {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CalcualrHipotenusa : ContentPage
-    {
-        public CalcualrHipotenusa()
-        {
+    public partial class CalcualrHipotenusa : ContentPage {
+        public CalcualrHipotenusa() {
             InitializeComponent();
         }
 
         double ladoA;
         double ladoB;
         double hipotenusa;
-        private void btnCalcularHip_Clicked(object sender, EventArgs e)
-        {
+        private void btnCalcularHip_Clicked(object sender, EventArgs e) {
             calcular();
             txtLadoB.Text = "";
             txtLadoC.Text = "";
         }
-        private void calcular()
-        {
-            if(!string.IsNullOrEmpty(txtLadoB.Text) || !string.IsNullOrEmpty(txtLadoC.Text))
-            {
+        private void calcular() {
+            if (!string.IsNullOrEmpty(txtLadoB.Text) || !string.IsNullOrEmpty(txtLadoC.Text)) {
+               
+                if (txtLadoC.Text.Trim() == "." || txtLadoC.Text.Trim() == "-") {
+                    DisplayAlert("Error", "Por favor colocque Números", "Ok");
+                    txtLadoC.Text = "";
+                }
+
+                if (txtLadoB.Text.Trim() == "-" || txtLadoB.Text.Trim() == ".") {
+                    DisplayAlert("Error", "Por favor colocque Números", "Ok");
+                    txtLadoB.Text = "";
+                }
+
                 ladoA = Convert.ToDouble(txtLadoB.Text);
                 ladoB = Convert.ToDouble(txtLadoC.Text);
 
-                if (ladoA >= 1 && ladoB >= 1)
-                {
+                if (ladoA >= 1 && ladoB >= 1) {
                     ladoA *= ladoA;
                     ladoB *= ladoB;
 
@@ -43,13 +47,11 @@ namespace App1.View
                     hipotenusa = Math.Sqrt(hipotenusa);
                     DisplayAlert("La Hipotenusa Equivale a:", hipotenusa.ToString(), "Ok");
                 }
-                else
-                {
+                else {
                     DisplayAlert("Error", "Los datos Invalidos", "Aceptar");
                 }
             }
-            else
-            {
+            else {
                 DisplayAlert("Error", "Campos Vacios", "Aceptar");
             }
         }
