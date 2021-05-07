@@ -12,7 +12,7 @@
             
             IconImageSource="calculator.png"/>
         
-        <ToolbarItem Text="Tarea N° 1" 
+        <ToolbarItem Text="Primera Tarea Con Xamarin Forms" 
                      Order="Primary"
                      Priority="0"/>
 
@@ -38,9 +38,13 @@
                FontAttributes="Bold"
                Margin="0,50,0,30"
                />
-        <Image Source="geometry.png" 
+        <!--<Image Source="geometry.png" 
+               HorizontalOptions="Center"
+               WidthRequest="100"/>-->
+        <Image Source="mate.gif" 
                HorizontalOptions="Center"
                WidthRequest="100"/>
+        
         
         <Entry Placeholder="Digite la Base"
                x:Name="txtBase"

@@ -16,7 +16,10 @@
                FontAttributes="Bold"
                Margin="0,50,0,30"
                />
-            <Image Source="caliente.png" 
+            <!--<Image Source="caliente.png" 
+               HorizontalOptions="Center"
+               WidthRequest="100"/>-->
+            <Image Source="temo.gif" 
                HorizontalOptions="Center"
                WidthRequest="100"/>
 
